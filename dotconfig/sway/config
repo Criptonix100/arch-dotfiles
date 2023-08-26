@@ -33,7 +33,7 @@ set $menu wofi --show
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /usr/share/backgrounds/sway/mikael-gustafsson-wallpaper-mikael-gustafsson.jpg fill
+output * bg /usr/share/backgrounds/sway/gavin-o-donnell-archipelago9.jpg fill
 #
 # Example configuration:
 #
@@ -224,6 +224,5 @@ bar {
 	swaybar_command waybar
 }
 
-for_window [app_id="flameshot"] floating enable, fullscreen disable, move absolute position 0 0, border pixel 0
 
 include /etc/sway/config.d/*
