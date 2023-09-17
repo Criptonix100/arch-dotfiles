@@ -1,0 +1,38 @@
+*{
+	border-radius: 3px;
+	border: none;
+}
+
+
+#window {
+	font-size: 16px;
+	font-family: "FiraCode Nerd Font";
+	background-color: rgba(50, 50, 50, 0.9);
+	color: white;
+	border-bottom: 3px solid white;
+}
+#entry{
+	padding: 0.25em;
+}
+
+#entry:selected {
+	background-color: #bbccdd;
+	background: linear-gradient(90deg, #87CEEB, #FFFFFF);
+}
+
+#text:selected {
+	background: none;
+	color: #333333;
+}
+
+#input{
+	background-color: rgba(50, 50, 50, 0.5);
+	color: white;
+	padding: 0.25em;
+}
+
+image{
+	background: none;
+	margin-left: .25em;
+	margin-right: .25em;
+}
