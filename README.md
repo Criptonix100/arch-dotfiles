@@ -1,9 +1,9 @@
 # arch-dotfiles
-My first Sway dotfiles
+My first WM dotfiles
 # Screenshot:
 ![2023 08 26-11:08:27](https://github.com/Criptonix100/arch-dotfiles/assets/111531295/03fa4b17-e257-4eb4-a7f7-9aafb8f706d2)
 # Packages required:
-firefox,foot,grim,lxsession-gtk3,slurp,sway,swaybg,swayidle,swaylock,waybar,wofi
+firefox,kitty,grim,polkit-gnome,slurp,hyprland,hyprpaper,waybar,wofi
 # Wallpaper:
 https://www.artstation.com/artwork/PoEDn1
 # Fonts:
