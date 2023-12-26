@@ -5,25 +5,24 @@
     // "width": 1280, // Waybar width
     // "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
-    "modules-left": ["hyprland/workspaces", "hyprland/mode", "custom/media"],
+    "modules-left": [
+	"hyprland/workspaces",
+	"hyprland/mode", 
+	"custom/media"
+],
     "modules-center": ["hyprland/window"],
-    "modules-right": ["pulseaudio", "network", "cpu", "memory", "tray", "clock", "custom/power"],
+    "modules-right": [
+	"pulseaudio",
+	"pulseaudio#microphone", 
+	"clock", 
+	"tray", 
+	"custom/power"
+],
     // Modules configuration
     "hyprland/workspaces": {
         "disable-scroll": true,
         "all-outputs": false,
         "on-click": "activate",
-        "persistent_workspaces": {
-            "1": [],
-            "2": [],
-            "3": [],
-            "4": [],
-            "5": [],
-            "6": [],
-            "7": [],
-            "8": [],
-            "9": []
-          },
         "format": "{icon}",
         "format-icons": {
             "1": "",
@@ -31,7 +30,7 @@
             "3": "",
             "4": "",
             "5": "",
-            "6": "󰭻",
+            "6": "󱧎",
             "7": "",
             "8": "",
             "9": ""
@@ -41,11 +40,11 @@
         "format": "<span style=\"italic\">{}</span>"
     },
     "tray": {
-        // "icon-size": 21,
+        "icon-size": 13,
         "spacing": 10
     },
     "clock": {
-        "format-alt": "{:%d/%m/%Y}",
+        "format": "{:%R %d/%m}",
 	"tooltip-format": "<tt><small>{calendar}</small></tt>"
     },
     "cpu": {
@@ -54,28 +53,36 @@
     "memory": {
         "format": "{}% "
     },
-    "network": {
-        // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "{essid} ({signalStrength}%) ",
-        "format-ethernet": "{ifname}: {ipaddr}/{cidr} ",
-        "format-disconnected": "Disconnected ⚠"
-    },
-    "pulseaudio": {
-        // "scroll-step": 1, // %, can be a float
-        "format": "{volume}% {icon}",
-        "format-bluetooth": "{volume}% {icon}",
-        "format-muted": " ",
+"pulseaudio": {
+        "format": "{icon} {volume}%",
+        "tooltip": false,
+        "format-muted": " Muted",
+        "on-click": "pamixer -t",
+	"on-click-middle": "pavucontrol",
+        "on-scroll-up": "pamixer -i 5",
+        "on-scroll-down": "pamixer -d 5",
+        "scroll-step": 5,
         "format-icons": {
             "headphone": "",
-            "hands-free": "",
-            "headset": "",
+            "hands-free": "",
+            "headset": "",
             "phone": "",
             "portable": "",
             "car": "",
             "default": ["", "", ""]
-        },
-        "on-click": "pavucontrol"
+        }
     },
+    "pulseaudio#microphone": {
+        "format": "{format_source}",
+        "format-source": " {volume}%",
+        "format-source-muted": " Muted",
+        "on-click": "pamixer --default-source -t",
+	"on-click-middle": "pavucontrol",
+        "on-scroll-up": "pamixer --default-source -i 5",
+        "on-scroll-down": "pamixer --default-source -d 5",
+        "scroll-step": 5
+	},
+
     "custom/media": {
         "format": "{icon} {}",
         "return-type": "json",
@@ -94,4 +101,3 @@
 	"tooltip": false,
     },
 }
-
