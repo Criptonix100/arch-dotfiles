@@ -5,7 +5,7 @@ My first WM dotfiles
 # Packages required:
 firefox,kitty,grim,polkit-gnome,slurp,hyprland,hyprpaper,waybar,wofi
 # Wallpaper:
-https://www.artstation.com/artwork/PoEDn1
+https://www.artstation.com/artwork/Y2Wew
 # Fonts:
 Normal Fonts used: Noto Fonts, Noto Fonts CJK, Noto Fonts Emoji, Font Awesome, Liberation, DejaVu, GNU Free Fonts
 Nerd Fonts used: Symbols, Meslo, JetBrains Mono, FiraCode, FiraMono
