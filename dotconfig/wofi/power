@@ -4,6 +4,3 @@ insensitive=true
 show=dmenu
 width=50
 lines=5
-location=top_right
-x=-120
-y=10

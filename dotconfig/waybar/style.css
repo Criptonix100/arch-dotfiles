@@ -8,7 +8,7 @@
 
 /* The whole bar */
 #waybar {
-    background: #323232;
+    background: #3B4252;
     color: white;
     font-family: "FiraCode Nerd Font";
     font-size: 13px;
@@ -90,7 +90,7 @@
 }
 
 #mode {
-    background: #64727D;
+    background: #D8DEE9;
     border-top: 2px solid white;
     /* To compensate for the top border and still have vertical centering */
     padding-bottom: 2px;
@@ -138,16 +138,16 @@
     padding-bottom: 2px;
     padding-left: 10px;
     padding-right: 10px;
-    color: #888888;
+    color: #E5E9F0;
 }
 
 #workspaces button.focused {
-    border-color: #4c7899;
+    border-color: #81A1C1;
     color: white;
-    background-color: #285577;
+    background-color: #5E81AC;
 }
 
 #workspaces button.urgent {
-    border-color: #c9545d;
-    color: #c9545d;
+    border-color: #BF616A;
+    color: #BF616A;
 }
