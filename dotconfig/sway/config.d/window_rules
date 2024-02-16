@@ -1,0 +1,63 @@
+# Window Rules
+
+for_window [title = "^Open File$"] floating enable
+for_window [title="File Operation Progress"] floating enable, border pixel 1, sticky enable, resize set width 40 ppt height 30 ppt
+for_window [title="Save File"] floating enable
+for_window [title = "Open Database File"] floating enable
+for_window [window_role = "GtkFileChooserDialog"] resize set 590 340
+for_window [window_role = "GtkFiileChooserDialog"] move position center
+for_window [window_role="Preferences"] floating enable
+for_window [window_role = "pop-up"] floating enable
+for_window [window_role = "bubble"] floating enable
+for_window [window_role = "dialog"] floating enable
+for_window [window_type = "dialog"] floating enable
+for_window [window_role = "task_dialog"] floating enable
+for_window [window_type = "menu"] floating enable
+for_window [title="(?i)(?:copying|deleting|moving)"] floating enable
+for_window [title = "Picture in picture"] floating enable, sticky enable
+
+# Yad
+for_window [app_id = "Yad"] floating enable
+for_window [app_id = "yad"] floating enable
+for_window [class = "yad"] floating enable
+
+#Polkit
+for_window [app_id = "polkit-gnome"] floating enable
+
+# General Applications
+for_window [app_id = "nwg-look"] floating enable, resize set width 580px height 480px
+for_window [app_id ="(?i)(?:pavucontrol|nm-connection-editor)"] floating enable
+for_window [app_id = "mpv"] floating enable
+
+# Thunar
+for_window [app_id = "thunar"] floating enable
+
+# Firefox
+assign [app_id="firefox"] 1
+assign [class="firefox"] 1
+for_window [app_id="firefox"] focus, inhibit_idle fullscreen
+for_window [class="firefox"] focus
+for_window [title = "About Mozilla Firefox"] floating enable
+for_window [window_role = "About"] floating enable
+for_window [title = "Firefox - Sharing Indicator"] floating enable
+for_window [title = "Firefox — Sharing Indicator"] floating enable
+for_window [app_id="firefox" title="Library"] floating enable, border pixel 1, sticky enable
+
+# Lutris
+assign [app_id="lutris"] 2
+for_window [app_id="lutris"] floating enable
+
+# Steam
+for_window [class="^steam$"] floating enable
+for_window [class="^Steam$"] floating enable
+for_window [class="^steam$" title="^Steam$"] floating disable
+
+# Titlebars get resized when text with a different height gets picked up.
+# This includes emoji and Hangul. This neat hack makes all titlebars higher.
+# See https://github.com/swaywm/sway/issues/4992
+for_window [title=".*"] title_format %title゜
+
+# Tag xwayland windows with [X]
+for_window [shell="xwayland"] title_format "<span>[X] %title゜</span>"
+
+#

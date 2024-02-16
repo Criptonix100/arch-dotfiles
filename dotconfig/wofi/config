@@ -1,2 +1,4 @@
+location=center
 mode=drun
+prompt=Search...
 allow_images=true

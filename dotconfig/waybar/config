@@ -7,11 +7,11 @@
     // "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
-	"hyprland/workspaces",
-	"hyprland/mode", 
+	"sway/workspaces",
+	"sway/mode", 
 	"custom/media"
 ],
-    "modules-center": ["hyprland/window"],
+    "modules-center": ["sway/window"],
     "modules-right": [
 	"pulseaudio",
 	"pulseaudio#microphone", 

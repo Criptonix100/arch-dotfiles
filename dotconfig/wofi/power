@@ -2,5 +2,6 @@ hide_search=true
 hide_scroll=true
 insensitive=true
 show=dmenu
+prompt=
 width=50
 lines=5
